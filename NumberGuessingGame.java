@@ -9,7 +9,7 @@ public class NumberGuessingGame{
         int min=1;
         int attempts=0;
         int targetNumber=(int)(Math.random()*((max-min+1)+min));
-        System.out.println(targetNumber);
+        // System.out.println(targetNumber); displaying target number for testing
   
         while(true){
               System.out.println("Enter the number between 1 to 100"); 
@@ -36,7 +36,7 @@ public class NumberGuessingGame{
 
         }
         playAgain();
-    
+      
     
         
     }
