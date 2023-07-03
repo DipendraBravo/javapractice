@@ -9,14 +9,15 @@ public class NumberGuessingGame{
         int min=1;
         int attempts=0;
         int targetNumber=(int)(Math.random()*((max-min+1)+min));
-        // System.out.println(targetNumber); displaying target number for testing
+         System.out.println(targetNumber); 
+        //  displaying target number for testing
   
         while(true){
               System.out.println("Enter the number between 1 to 100"); 
               Scanner scanner = new Scanner(System.in);
               int guessNumber = scanner.nextInt();
               attempts++;
-              if(attempts<5){
+              if(attempts<=5){
                     if(guessNumber==targetNumber){
                     System.out.println("Congratulations ! you guessed the correct number in "+attempts+" attempts");
                     break;
@@ -55,9 +56,6 @@ public class NumberGuessingGame{
 
     }
     public static void main(String[] args) {
-      
-
-
         NumberGuessingGame game= new NumberGuessingGame();
         game.playGame();
         
