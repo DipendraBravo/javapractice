@@ -19,22 +19,18 @@ public class NumberGuessingGame{
               attempts++;
               if(attempts<=5){
                     if(guessNumber==targetNumber){
-                    System.out.println("Congratulations ! you guessed the correct number in "+attempts+" attempts");
-                    break;
+                        System.out.println("Congratulations ! you guessed the correct number in "+attempts+" attempts");
+                         break;
                     }else if(guessNumber>targetNumber){
-                    System.out.println("Too high. Try Again");
-                    break;
+                        System.out.println("Too high. Try Again");
+                     
                     }
-                    else
-                    {
-                    System.out.println("Too low.Try Again");
-                    break;
-                    }
+                    else{
+                        System.out.println("Too low.Try Again");
+                      }
                 }else{
                     break;
                 }
-              
-
         }
         playAgain();
       
@@ -55,9 +51,11 @@ public class NumberGuessingGame{
         }
 
     }
-    public static void main(String[] args) {
-        NumberGuessingGame game= new NumberGuessingGame();
-        game.playGame();
+    static public  void main(String[] args) {
+        System.out.println(100+100+"hello");
+        System.out.println("hello"+100+100);
+         NumberGuessingGame game= new NumberGuessingGame();
+         game.playGame();
         
     }
 
